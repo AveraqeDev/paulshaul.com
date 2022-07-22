@@ -1,0 +1,25 @@
+import Link from "next/link";
+
+const CallToAction: React.FC = () => {
+  return (
+    <div className="bg-gray-50 rounded-md shadow">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:flex lg:items-center lg:justify-between">
+        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <span className="block">Need something hauled?</span>
+          <span className="block text-zinc-600">Get a free quote today.</span>
+        </h2>
+        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div className="inline-flex rounded-md shadow">
+            <Link href="/contact">
+              <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-zinc-600 hover:bg-zinc-700">
+                Get a Quote
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CallToAction;

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 
 type LayoutProps = {
@@ -20,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Header />
       </header>
       <main className="max-w-7xl m-auto px-4 py-6">{children}</main>
+      <Footer />
     </>
   );
 };
